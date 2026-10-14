@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171513">
+  <meta name="description" content="Interaktivní průvodce románem Otec Goriot od Honorého de Balzaca.">
+  <title>Otec Goriot — interaktivní průvodce</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="reading-progress" id="reading-progress"></div>
+
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="Otec Goriot, začátek stránky">
+      <span class="logo-mark">OG</span>
+      <span>Literární karta</span>
+    </a>
+    <button class="icon-button" id="theme-toggle" type="button" aria-label="Přepnout barevný režim">☼</button>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="kicker"><span></span> Honoré de Balzac · 1835</p>
+        <h1>Otec<br><i>Goriot</i></h1>
+        <p class="hero-intro">Příběh o lásce, která dala všechno — a o společnosti, která si vzala ještě víc.</p>
+        <div class="hero-buttons">
+          <a class="button button-primary" href="#pribeh">Prozkoumat dílo <b>↓</b></a>
+          <button class="button button-quiet" id="random-idea" type="button">✦ Náhodná myšlenka</button>
+        </div>
+        <p class="idea" id="idea" aria-live="polite">Klikni a nech si odhalit jednu z hlavních myšlenek románu.</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="sun"></div>
+        <div class="arch arch-one"></div>
+        <div class="arch arch-two"></div>
+        <div class="city-line"></div>
+        <span class="art-letter">G</span>
+      </div>
+    </section>
+
+    <section class="fact-strip section-shell" aria-label="Základní informace">
+      <div><strong>1835</strong><span>první vydání</span></div>
+      <div><strong>Realismus</strong><span>literární směr</span></div>
+      <div><strong>Román</strong><span>žánr</span></div>
+    </section>
+
+    <section class="content-section section-shell" id="pribeh">
+      <div class="section-label">01 <span>rychlý vstup</span></div>
+      <div class="section-title">
+        <h2>Paříž, kde má<br><em>všechno cenu.</em></h2>
+        <p>Nejdřív si poskládej základní obraz příběhu.</p>
+      </div>
+      <div class="story-card">
+        <div class="story-card-top"><span class="card-tag">PŘÍBĚH V KOSTCE</span><span>03 min čtení</span></div>
+        <p>V pařížském penzionu paní Vauquerové se setkávají lidé, kteří chtějí změnit svůj osud. Žije zde i bývalý obchodník <b>otec Goriot</b>, který rozdal celý svůj majetek svým dvěma dcerám.</p>
+        <p>Dcery ale dávají přednost penězům, plesům a společenskému postavení. Mladý <b>Evžen Rastignac</b> jejich svět pozoruje a rozhoduje se, jakou cenu je ochoten zaplatit za úspěch.</p>
+        <blockquote>„Teď je řada na mně a na vás, společnost!“<cite>— Evžen Rastignac</cite></blockquote>
+      </div>
+    </section>
+
+    <section class="content-section section-shell">
+      <div class="section-label">02 <span>hlavní motivy</span></div>
+      <div class="section-title">
+        <h2>Co zůstane<br><em>v hlavě?</em></h2>
+        <p>Ťukni na kartu a zaměř se na konkrétní téma.</p>
+      </div>
+      <div class="motif-grid" id="motif-grid">
+        <button class="motif motif-featured is-selected" type="button" data-motif="laska">
+          <span class="motif-icon">♡</span><strong>Otcovská láska</strong>
+          <span class="motif-text">Goriot miluje bez podmínek. Jeho obětavost se však mění v nástroj, kterým ho ostatní ovládají.</span>
+        </button>
+        <button class="motif" type="button" data-motif="penize">
+          <span class="motif-icon">₣</span><strong>Peníze</strong>
+          <span class="motif-text">Ve světě románu mají často větší váhu než city.</span>
+        </button>
+        <button class="motif" type="button" data-motif="vzestup">
+          <span class="motif-icon">↗</span><strong>Vzestup</strong>
+          <span class="motif-text">Rastignac chce do vyšší společnosti — za jakou cenu?</span>
+        </button>
+        <button class="motif" type="button" data-motif="samota">
+          <span class="motif-icon">◌</span><strong>Samota</strong>
+          <span class="motif-text">Člověk může být opuštěný i uprostřed davu.</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="content-section section-shell" id="postavy">
+      <div class="section-label">03 <span>obsazení</span></div>
+      <div class="section-title">
+        <h2>Kdo je<br><em>kdo?</em></h2>
+        <p>Vyber si postavu a odhal její roli v příběhu.</p>
+      </div>
+      <div class="character-tools">
+        <div class="filter-pills" role="group" aria-label="Filtrovat postavy">
+          <button class="filter-pill is-active" type="button" data-filter="all">Všichni</button>
+          <button class="filter-pill" type="button" data-filter="family">Rodina</button>
+          <button class="filter-pill" type="button" data-filter="society">Společnost</button>
+        </div>
+      </div>
+      <div class="character-list" id="character-list">
+        <article class="character" data-group="family">
+          <button class="character-summary" type="button" aria-expanded="false">
+            <span class="avatar avatar-goriot">G</span><span><b>Otec Goriot</b><small>Milující otec</small></span><i>+</i>
+          </button>
+          <p class="character-detail">Bývalý obchodník, který se pro své dcery vzdá majetku, zdraví i důstojnosti.</p>
+        </article>
+        <article class="character" data-group="society">
+          <button class="character-summary" type="button" aria-expanded="false">
+            <span class="avatar avatar-rastignac">R</span><span><b>Evžen Rastignac</b><small>Ambiciózní student</small></span><i>+</i>
+          </button>
+          <p class="character-detail">Pozoruje pravidla pařížské společnosti a učí se, že úspěch může vyžadovat morální kompromis.</p>
+        </article>
+        <article class="character" data-group="society">
+          <button class="character-summary" type="button" aria-expanded="false">
+            <span class="avatar avatar-vautrin">V</span><span><b>Vautrin</b><small>Cynický samotář</small></span><i>+</i>
+          </button>
+          <p class="character-detail">Tajemný muž s kriminální minulostí. Představuje nejtvrdší podobu společenského pragmatismu.</p>
+        </article>
+        <article class="character" data-group="family">
+          <button class="character-summary" type="button" aria-expanded="false">
+            <span class="avatar avatar-daughters">A/D</span><span><b>Anastázie a Delfína</b><small>Goriotovy dcery</small></span><i>+</i>
+          </button>
+          <p class="character-detail">Touží po společenském uznání a otcovu lásku přijímají hlavně tehdy, když se jim hodí.</p>
+        </article>
+        <article class="character" data-group="society">
+          <button class="character-summary" type="button" aria-expanded="false">
+            <span class="avatar avatar-vauquer">V</span><span><b>Paní Vauquerová</b><small>Majitelka penzionu</small></span><i>+</i>
+          </button>
+          <p class="character-detail">Hodnotí své nájemníky především podle jejich peněz a společenské hodnoty.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="quiz-section section-shell" id="kviz">
+      <div class="section-label">04 <span>zkus si to</span></div>
+      <div class="quiz-card">
+        <span class="quiz-kicker">MINI KVÍZ</span>
+        <h2>Jak dobře znáš<br><em>Otcova Goriota?</em></h2>
+        <p id="quiz-question">Kdo je autorem románu?</p>
+        <div class="quiz-options" id="quiz-options">
+          <button type="button" data-correct="true">Honoré de Balzac</button>
+          <button type="button">Victor Hugo</button>
+          <button type="button">Émile Zola</button>
+        </div>
+        <p class="quiz-result" id="quiz-result" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="closing-card section-shell">
+      <span class="section-label">na závěr</span>
+      <p>Balzac ukazuje společnost, kde peníze a prestiž dokážou převážit nad rodinou, vděčností i lidskostí.</p>
+      <a class="button button-light" href="otec-goriot.html">Otevřít úplný rozbor <b>→</b></a>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">Honoré de Balzac <span>·</span> Lidská komedie</footer>
+  <nav class="bottom-nav" aria-label="Rychlá navigace">
+    <a class="is-active" href="#top"><span>⌂</span><small>Domů</small></a>
+    <a href="#pribeh"><span>◈</span><small>Příběh</small></a>
+    <a href="#postavy"><span>♧</span><small>Postavy</small></a>
+    <a href="#kviz"><span>?</span><small>Kvíz</small></a>
+  </nav>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
